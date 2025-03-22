@@ -5,12 +5,6 @@ Python + Flask + MySQL 기반으로 제작되었으며, ORM 없이 SQL 문법을
 
 ---
 
-## 📁 프로젝트 구조
-board_project/├── app.py # 메인 백엔드 로직 ├── static/ │ └── style.css # 전체 공통 스타일 ├── templates/ │ ├── index.html # 게시글 목록 + 검색 │ ├── create.html # 글 작성 │ ├── view.html # 글 보기 │ └── update.html # 글 수정 ├── README.md # 프로젝트 설명 파일
-
-
----
-
 ## 🔧 사용 기술
 
 - **Backend**: Python, Flask
@@ -74,3 +68,9 @@ pip install flask pymysql
 
 # 실행
 python app.py
+```
+-> 브라우저에서 http://127.0.0.1:5000 접속
+
+## 📌 기타
+- pymysql로 SQL 직접 작성하여 ORM 미사용
+- 사용자 경험을 위한 검색 유지, 디자인 통일, 확인창 등 적용
