@@ -1,0 +1,141 @@
+/* 전체 페이지 기본 스타일 */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f7f8fa;
+    margin: 30px;
+    color: #333;
+}
+
+/* 검색창 전체 박스 */
+.search-box {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* 검색어 입력, 드롭다운 */
+.search-box input[type="text"],
+.search-box select {
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+/* 검색 버튼 */
+.search-box button {
+    padding: 10px 15px;
+    background-color: #dddddd;
+    color: #333;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-box button:hover {
+    background-color: #bbbbbb;
+    color: #000;
+}
+
+/* 전체 목록 / 글 작성 버튼 */
+.action-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #dddddd;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-right: 10px;
+}
+
+.action-button:hover {
+    background-color: #bbbbbb;
+    color: #000;
+}
+
+
+/* 게시글 목록 박스 */
+.post-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.post-card h2 a {
+    text-decoration: none;
+    color: #000000; 
+    font-size: 22px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.post-card h2 a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+/* 공통 박스 레이아웃 */
+.page-box {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: 30px auto;
+}
+
+/* 폼 요소 통일 스타일 */
+.page-box input[type="text"],
+.page-box textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+/* 버튼 */
+.page-box button {
+    padding: 10px 20px;
+    background-color: #dddddd;
+    color: #333;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.page-box button:hover {
+    background-color: #bbbbbb;
+    color: #000;
+}
+
+/* 돌아가기 링크를 버튼처럼 */
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.back-button:hover {
+    background-color: #c2c2c2;
+}
+
+

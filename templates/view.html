@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ post.title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="page-box">
+        <h1>📰 {{ post.title }}</h1>
+
+        <hr style="margin: 20px 0; border: none; border-top: 1px solid #ddd;">
+
+        <p style="font-size: 16px; line-height: 1.6;">{{ post.content }}</p>
+
+        <small style="color: #666;">작성일: {{ post.created_at }}</small>
+
+        <div style="margin-top: 30px;">
+            <a href="/update/{{ post.id }}" class="action-button">✏️ 수정</a>
+            <a href="/delete/{{ post.id }}" onclick="return confirm('정말 삭제하시겠습니까?');" class="action-button">🗑️ 삭제</a>
+            <a href="/" class="action-button">📋 목록으로</a>
+        </div>
+    </div>
+</body>
+</html>
